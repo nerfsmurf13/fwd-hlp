@@ -103,9 +103,9 @@ const store = useSiteStore()
 
 .nav-link {
   display: block;
-  padding: 0.5rem 0.625rem;
+  padding: 0.5rem 0.5rem;
   border-radius: var(--radius-btn);
-  font-size: 0.9375rem;
+  font-size: 0.9rem;
   font-weight: 500;
   color: var(--navy);
   transition: color 0.15s ease, background-color 0.15s ease;
@@ -121,7 +121,7 @@ const store = useSiteStore()
 }
 
 .nav-cta {
-  margin-left: 0.75rem;
+  margin-left: 0.5rem;
   padding: 0.5rem 1.125rem;
   font-size: 0.8125rem;
 }

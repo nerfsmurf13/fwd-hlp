@@ -23,7 +23,7 @@ const store = useSiteStore()
             <RouterLink to="/why-licensed" class="btn btn-primary">
               {{ store.hero.ctaPrimary }}
             </RouterLink>
-            <RouterLink to="/verify" class="text-link">
+            <RouterLink to="/partners" class="text-link">
               {{ store.hero.ctaSecondary }}
             </RouterLink>
           </div>
