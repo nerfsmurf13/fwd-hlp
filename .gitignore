@@ -16,3 +16,6 @@ Thumbs.db
 
 # logs
 *.log
+
+# personal outreach notes
+email.md
