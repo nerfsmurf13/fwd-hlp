@@ -12,6 +12,7 @@ export const useSiteStore = defineStore('site', {
     about: content.about,
     sunset: content.sunset,
     join: content.join,
+    partners: content.partners,
     history: content.history,
     regulations: content.regulations,
     resources: content.resources,

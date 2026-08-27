@@ -8,6 +8,7 @@ const routes = [
   { path: '/resources', name: 'resources', component: () => import('../pages/ResourcesPage.vue'), meta: { title: 'Resources' } },
   { path: '/join', name: 'join', component: () => import('../pages/JoinPage.vue'), meta: { title: 'Join the Effort' } },
   { path: '/verify', name: 'verify', component: () => import('../pages/VerifyPage.vue'), meta: { title: 'Verify a License' } },
+  { path: '/partners', name: 'partners', component: () => import('../pages/PartnersPage.vue'), meta: { title: 'Trusted Partners' } },
   { path: '/contact', name: 'contact', component: () => import('../pages/ContactPage.vue'), meta: { title: 'Contact' } },
   { path: '/:pathMatch(.*)*', name: 'not-found', component: () => import('../pages/NotFoundPage.vue'), meta: { title: 'Not Found' } }
 ]

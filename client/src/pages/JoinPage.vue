@@ -58,11 +58,9 @@ const store = useSiteStore()
             {{ para }}
           </p>
         </div>
-        <div class="placeholder">
-          <p>{{ store.join.partners.placeholder }}</p>
-        </div>
         <div class="cta-row">
-          <RouterLink to="/contact" class="btn btn-primary">Become a Partner</RouterLink>
+          <RouterLink to="/partners" class="btn btn-primary">See the Trusted Partners</RouterLink>
+          <RouterLink to="/contact" class="text-link">Become a Partner</RouterLink>
           <a :href="'tel:' + store.site.phone.replace(/\D/g, '')" class="text-link">
             Or call {{ store.site.phone }}
           </a>
@@ -138,17 +136,6 @@ const store = useSiteStore()
 }
 
 /* ---------- partners ---------- */
-.placeholder {
-  margin-top: 2.5rem;
-  border: 2px dashed var(--line);
-  border-radius: var(--radius-card);
-  padding: 3rem;
-  text-align: center;
-  color: var(--slate);
-  font-size: 0.9375rem;
-  font-weight: 500;
-}
-
 .cta-row {
   display: flex;
   flex-wrap: wrap;

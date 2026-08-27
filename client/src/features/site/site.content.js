@@ -332,8 +332,83 @@ export const join = {
     body: [
       "Calling a licensed plumber doesn't always guarantee an honest one, and it just chaps our hide that some take advantage of unwitting customers.",
       "That's why we keep a list of companies that support this effort and are committed to protecting the health of the nation and the integrity of the trade. Next time you need a licensed plumber, the choice gets a little easier."
-    ],
-    placeholder: 'Partner directory launching soon — your company could be first on the list.'
+    ]
+  }
+}
+
+export const partners = {
+  eyebrow: 'Companies That Back the Cause',
+  heading: 'Trusted Partners',
+  subheading:
+    'Every company on this list holds an active Responsible Master Plumber license and supports the effort to keep plumbing licensing strong in Texas.',
+  note: 'Sample listings shown for demonstration.',
+  companies: [
+    {
+      name: 'Lone Star Plumbing Co.',
+      city: 'Houston',
+      monogram: 'LS',
+      accent: 'blue',
+      rmp: 'Dale Hutchins',
+      license: 'RMP-38214',
+      phone: '(713) 555-0142',
+      bio: 'Family-run since 1989. Repipes, water heaters, and gas lines across greater Houston, with every job pulled to permit.'
+    },
+    {
+      name: 'Bayou City Drain & Gas',
+      city: 'Houston',
+      monogram: 'BC',
+      accent: 'navy',
+      rmp: 'Marcus Reed',
+      license: 'RMP-41507',
+      phone: '(281) 555-0178',
+      bio: 'Storm-season specialists. After Harvey, crews spent four months restoring gas service in flooded homes, free inspections included.'
+    },
+    {
+      name: 'Big Tex Plumbing',
+      city: 'Dallas',
+      monogram: 'BT',
+      accent: 'orange',
+      rmp: 'Carla Jimenez',
+      license: 'RMP-36990',
+      phone: '(214) 555-0119',
+      bio: 'Commercial and residential service across the Metroplex. Every tech carries their license card and shows it before the work starts.'
+    },
+    {
+      name: 'Trinity River Plumbing',
+      city: 'Dallas',
+      monogram: 'TR',
+      accent: 'blue',
+      rmp: 'Sam Okafor',
+      license: 'RMP-44123',
+      phone: '(469) 555-0163',
+      bio: 'Slab leaks, sewer camera work, and honest quotes in writing. Third-generation shop out of Oak Cliff.'
+    },
+    {
+      name: 'Piney Woods Plumbing',
+      city: 'Tyler',
+      monogram: 'PW',
+      accent: 'navy',
+      rmp: 'Earl Whitmore',
+      license: 'RMP-29876',
+      phone: '(903) 555-0131',
+      bio: 'Serving East Texas since 1978, thirty miles from New London. Around here, nobody has to explain why the license matters.'
+    },
+    {
+      name: 'Gulf Coast Water Works',
+      city: 'Galveston',
+      monogram: 'GC',
+      accent: 'orange',
+      rmp: 'Renee Castillo',
+      license: 'RMP-40261',
+      phone: '(409) 555-0187',
+      bio: 'Coastal homes, salt air, and hard water. Backflow certification and water supply protection endorsements on staff.'
+    }
+  ],
+  videoNote: 'RMP video commercial',
+  cta: {
+    text: 'Want your company on this list?',
+    body: 'Partners contributing $1,000 or more a year get a banner, a bio, and a short video commercial featuring their RMP, right here for every visitor to see.',
+    label: 'Become a Partner'
   }
 }
 
