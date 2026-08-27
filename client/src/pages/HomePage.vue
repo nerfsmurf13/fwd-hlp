@@ -59,22 +59,7 @@ const store = useSiteStore()
       </div>
     </section>
 
-    <!-- License verification (primary product feature) -->
-    <SiteVerifyCard />
-
-    <!-- History teaser -->
-    <section class="section">
-      <div class="wrap teaser">
-        <div>
-          <p class="eyebrow eyebrow-rule">{{ store.history.event.date }}</p>
-          <h2 class="teaser-title">{{ store.history.event.title }}</h2>
-          <p class="body-copy teaser-body">{{ store.history.event.body[0] }}</p>
-          <RouterLink to="/history" class="text-link teaser-link">Read what happened</RouterLink>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sunset Act urgency band -->
+    <!-- Sunset Act urgency band: why this site exists -->
     <section class="section section-navy">
       <div class="wrap sunset">
         <div>
@@ -85,6 +70,21 @@ const store = useSiteStore()
         </div>
         <div class="sunset-cta">
           <RouterLink to="/join" class="btn btn-primary">{{ store.sunset.cta }} &rarr;</RouterLink>
+        </div>
+      </div>
+    </section>
+
+    <!-- License verification -->
+    <SiteVerifyCard />
+
+    <!-- History teaser -->
+    <section class="section">
+      <div class="wrap teaser">
+        <div>
+          <p class="eyebrow eyebrow-rule">{{ store.history.event.date }}</p>
+          <h2 class="teaser-title">{{ store.history.event.title }}</h2>
+          <p class="body-copy teaser-body">{{ store.history.event.body[0] }}</p>
+          <RouterLink to="/history" class="text-link teaser-link">Read what happened</RouterLink>
         </div>
       </div>
     </section>
