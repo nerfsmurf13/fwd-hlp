@@ -2,7 +2,7 @@
 import { useSiteStore } from '../features/site/site.store.js'
 import SiteVerifyCard from '../features/site/SiteVerifyCard.vue'
 import BaseIcon from '../core/components/BaseIcon.vue'
-import mascot from '../assets/mascot.png'
+import mascot from '../assets/mascot.webp'
 
 const store = useSiteStore()
 </script>

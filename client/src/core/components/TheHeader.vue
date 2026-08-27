@@ -1,6 +1,6 @@
 <script setup>
 import { useSiteStore } from '../../features/site/site.store.js'
-import mascot from '../../assets/mascot.jpg'
+import mascot from '../../assets/mascot-badge.webp'
 
 const store = useSiteStore()
 </script>

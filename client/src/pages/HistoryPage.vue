@@ -1,8 +1,8 @@
 <script setup>
 import { useSiteStore } from '../features/site/site.store.js'
 import BasePageHeader from '../core/components/BasePageHeader.vue'
-import licenseArtifact from '../assets/license-artifact.jpg'
-import newLondon from '../assets/new-london.jpg'
+import licenseArtifact from '../assets/license-artifact.webp'
+import newLondon from '../assets/new-london.webp'
 
 const store = useSiteStore()
 
