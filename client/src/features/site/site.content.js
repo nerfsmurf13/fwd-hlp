@@ -24,8 +24,8 @@ export const hero = {
   eyebrow: 'A Texas Consumer-Education Campaign',
   headline: ['Hire Licensed.', 'Stay Protected.'],
   body: "When you turn a faucet or light the water heater, you're trusting that whoever did the work did it right. In Texas, a plumbing license is how you know. Check it before the work starts.",
-  ctaPrimary: 'Verify a Texas License',
-  ctaSecondary: 'Why licensing matters',
+  ctaPrimary: 'Why Hire a Licensed Plumber?',
+  ctaSecondary: 'Verify a Texas license',
   checks: ['Founded by licensed Texas plumbers', 'Free consumer education', 'Backed by state records']
 }
 

@@ -20,10 +20,10 @@ const store = useSiteStore()
           </h1>
           <p class="sub rise rise-3">{{ store.hero.body }}</p>
           <div class="hero-actions rise rise-4">
-            <RouterLink to="/verify" class="btn btn-primary">
+            <RouterLink to="/why-licensed" class="btn btn-primary">
               {{ store.hero.ctaPrimary }}
             </RouterLink>
-            <RouterLink to="/why-licensed" class="text-link">
+            <RouterLink to="/verify" class="text-link">
               {{ store.hero.ctaSecondary }}
             </RouterLink>
           </div>
