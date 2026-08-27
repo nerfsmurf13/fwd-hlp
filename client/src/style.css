@@ -1,0 +1,361 @@
+/* =====================================================
+   HireLicensedPlumbers.com — "Modern Texas Trade Heritage"
+   70% white / 20% navy-blue / 8% orange / 2% everything else
+   ===================================================== */
+
+:root {
+  /* palette */
+  --white: #ffffff;
+  --navy: #002349;
+  --blue: #0056b3;
+  --pale-blue: #cfe2f3;
+  --pale-blue-soft: #e7f0f9; /* pale blue at ~50% intensity for section bands */
+  --gray: #f2f5f8;
+  --slate: #405a77;
+  --orange: #ff6b00;
+  --orange-dark: #e05e00;
+  --yellow: #fdf81a;
+  --green: #489f48;
+  --red: #d82222;
+  --line: #dde5ec;
+
+  /* type */
+  --font-head: "Barlow Condensed", "Arial Narrow", sans-serif;
+  --font-body: "Libre Franklin", "Franklin Gothic Medium", ui-sans-serif, system-ui, sans-serif;
+  --text-h1: clamp(2.75rem, 6vw, 4.5rem);
+  --text-h2: clamp(2rem, 4vw, 3rem);
+  --text-h3: clamp(1.5rem, 2.5vw, 1.75rem);
+  --text-body: 1.0625rem;
+  --text-small: 0.875rem;
+
+  /* shape + layout */
+  --radius-btn: 7px;
+  --radius-card: 9px;
+  --wrap: 75rem;
+  --section-pad: clamp(4.5rem, 9vw, 7.5rem);
+}
+
+/* ---------- reset ---------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: 1.65;
+  color: var(--navy);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+iframe {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--line);
+}
+
+/* ---------- headline system ---------- */
+h1,
+h2,
+h3,
+.headline {
+  font-family: var(--font-head);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+  color: var(--navy);
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+/* ---------- layout helpers ---------- */
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: 1.25rem;
+}
+
+@media (min-width: 640px) {
+  .wrap {
+    padding-inline: 2rem;
+  }
+}
+
+.section {
+  padding-block: var(--section-pad);
+}
+
+.section-gray {
+  background: var(--gray);
+}
+
+.section-pale {
+  background: var(--pale-blue-soft);
+}
+
+/* ---------- typography helpers ---------- */
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+.sub {
+  color: var(--slate);
+  font-size: 1.125rem;
+  max-width: 42rem;
+  text-wrap: pretty;
+}
+
+.body-copy {
+  color: var(--slate);
+  text-wrap: pretty;
+}
+
+/* ---------- buttons ---------- */
+.btn {
+  display: inline-block;
+  padding: 0.875rem 1.75rem;
+  border: 2px solid transparent;
+  border-radius: var(--radius-btn);
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary {
+  background: var(--orange);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background: var(--orange-dark);
+}
+
+.btn-secondary {
+  background: var(--white);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.btn-secondary:hover {
+  background: var(--blue);
+  color: var(--white);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* text-link with orange arrow */
+.text-link {
+  font-weight: 600;
+  color: var(--blue);
+}
+
+.text-link::after {
+  content: " \2192";
+  color: var(--orange);
+}
+
+.text-link:hover {
+  color: var(--navy);
+}
+
+/* ---------- cards ---------- */
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-card);
+  padding: 1.75rem;
+  box-shadow: 0 1px 2px rgb(0 35 73 / 0.04);
+}
+
+/* ---------- yellow safety highlighter (the ONLY yellow) ---------- */
+.highlight {
+  background: linear-gradient(transparent 55%, var(--yellow) 55%, var(--yellow) 92%, transparent 92%);
+  padding-inline: 0.15em;
+}
+
+/* ---------- status badges ---------- */
+.badge-verified {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: var(--green);
+  color: var(--white);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ---------- navy campaign band ---------- */
+.section-navy {
+  position: relative;
+  background: var(--navy);
+  color: rgb(255 255 255 / 0.88);
+  overflow: hidden;
+}
+
+/* faint diagonal "pipe thread" texture */
+.section-navy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    -45deg,
+    rgb(255 255 255 / 0.03) 0 2px,
+    transparent 2px 14px
+  );
+  pointer-events: none;
+}
+
+.section-navy > * {
+  position: relative;
+}
+
+.section-navy h1,
+.section-navy h2,
+.section-navy h3,
+.section-navy .headline {
+  color: var(--white);
+}
+
+.section-navy .eyebrow {
+  color: var(--orange);
+}
+
+/* ---------- eyebrow with leading orange rule ---------- */
+.eyebrow-rule {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.eyebrow-rule::before {
+  content: "";
+  width: 2.25rem;
+  height: 3px;
+  background: var(--orange);
+}
+
+.eyebrow-rule + h2 {
+  margin-top: 0.75rem;
+}
+
+/* ---------- selection + focus ---------- */
+::selection {
+  background: var(--pale-blue);
+  color: var(--navy);
+}
+
+:focus-visible {
+  outline: 3px solid var(--orange);
+  outline-offset: 2px;
+}
+
+/* ---------- entrance reveal (page-load stagger) ---------- */
+@keyframes rise {
+  from {
+    opacity: 0;
+    translate: 0 1.25rem;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+.rise {
+  animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+.rise-1 { animation-delay: 0.05s; }
+.rise-2 { animation-delay: 0.15s; }
+.rise-3 { animation-delay: 0.25s; }
+.rise-4 { animation-delay: 0.35s; }
+
+@media (prefers-reduced-motion: reduce) {
+  .rise {
+    animation: none;
+  }
+}
+
+/* ---------- forms ---------- */
+.field {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-btn);
+  background: var(--white);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.field:focus {
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px rgb(0 86 179 / 0.15);
+}
